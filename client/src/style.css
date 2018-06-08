@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-size: 16px;
+}
+
+a {
+    color: #00bcd4;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.4s;
+}
+
+a:hover {
+    color: #1976d2;
+}
+
+.top-bar {
+    padding: 10px 15px;
+    margin-bottom: 50px;
+}
+
+.top-bar::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.top-bar-left {
+    float: left;
+    font-size: 1.5em;
+}
+
+.top-bar-right {
+    float: right;
+}
+
+.container {
+    margin: 16px 0;
+    padding: 16px;
+    overflow-x: auto;
+}
+
+.button-line {
+    padding: 16px 0;
+}
+
+.error-message {
+    color: tomato;
+}
+
+.success-message {
+    color: green;
+}
+
+.flex {
+    flex: 1;
+}

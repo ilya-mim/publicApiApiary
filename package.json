@@ -1,0 +1,48 @@
+{
+    "name": "PublicApiApiary",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@material-ui/core": "^1.2.0",
+        "body-parser": "^1.18.3",
+        "express": "^4.16.3",
+        "prop-types": "^15.6.1",
+        "react": "^16.4.0",
+        "react-dom": "^16.4.0",
+        "react-router": "^3.2.1",
+        "request": "^2.87.0",
+        "validator": "^10.2.0"
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-jest": "^23.0.1",
+        "babel-loader": "^7.1.4",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "css-loader": "^0.28.11",
+        "enzyme": "^3.3.0",
+        "enzyme-adapter-react-16": "^1.1.1",
+        "jest": "^23.1.0",
+        "jest-enzyme": "^6.0.1",
+        "nodemon": "^1.17.5",
+        "style-loader": "^0.21.0",
+        "webpack": "^4.10.2",
+        "webpack-cli": "^3.0.1"
+    },
+    "scripts": {
+        "start": "nodemon --use_strict index.js",
+        "bundle": "webpack --mode development",
+        "build": "webpack --mode production",
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "test:coverage": "jest --coverage"
+    },
+    "jest": {
+        "setupFiles": [
+            "./client/src/jestsetup.js"
+        ]
+    }
+}
